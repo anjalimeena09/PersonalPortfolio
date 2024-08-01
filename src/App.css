@@ -1,38 +1,182 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Reset and base styles */
+* {
+  /* background-color: #3e33332b; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg'); /* Adjust background image */
+    background-attachment: fixed; /* Keep the background image fixed */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 2, 0.393); /* Adjust the transparency here */
+  z-index: -2; /* Ensure the overlay is above the background image */
+}
+
+
+/* Navbar styles */
+  /* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  overflow:visible;
+  /* background-color: rgb(0, 0, 0);  */
+  background-color: rgb(34, 29, 31); 
+  padding: 20px 0; /* Top and bottom padding */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
   text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar a:hover{
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+                0 0 20px rgba(123, 9, 64, 0.4),
+                0 0 30px rgba(123, 9, 64, 0.4),
+                0 0 40px rgba(123, 9, 64, 0.4),
+                0 0 70px rgba(123, 9, 64, 0.4),
+                0 0 80px rgba(123, 9, 64, 0.4),
+                0 0 100px rgba(123, 9, 64, 0.4),
+                0 0 150px rgba(123, 9, 64, 0.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.navbar a.active {
+  text-decoration: underline;
+  /* background-color: #a1054e;*/
+  color: #a1054e; 
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+                0 0 20px rgba(123, 9, 64, 0.4),
+                0 0 30px rgba(123, 9, 64, 0.4),
+                0 0 40px rgba(123, 9, 64, 0.4),
+                0 0 70px rgba(123, 9, 64, 0.4),
+                0 0 80px rgba(123, 9, 64, 0.4),
+                0 0 100px rgba(123, 9, 64, 0.4),
+                0 0 150px rgba(123, 9, 64, 0.4);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 0 auto; /* Center align */
+  padding: 0 8%; /* Side padding */
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  flex: 1; /* Take remaining space */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.brand {
+  font-size: 1.5rem; /* Brand font size */
+  margin: 0;
+  color: #fff; /* Brand text color */
+}
+
+.brand .highlight {
+  color: #a1054e; /* Highlight color */
+}
+
+/* Desktop navigation menu */
+.nav-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 20px; /* Margin between nav items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff; /* Nav link color */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a1054e; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none; /* Initially hide on desktop */
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Mobile Menu Styles */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-menu {
+    position: absolute;
+    top: 80px; /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0); /* Mobile menu background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-menu.active {
+    max-height: 300px; /* Adjust based on your content height */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #a1054e;
   }
 }

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Dark background for contrast */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #a1054e;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+              0 0 20px rgba(123, 9, 64, 0.4),
+              0 0 30px rgba(123, 9, 64, 0.4),
+              0 0 40px rgba(123, 9, 64, 0.4),
+              0 0 70px rgba(123, 9, 64, 0.4),
+              0 0 80px rgba(123, 9, 64, 0.4),
+              0 0 100px rgba(123, 9, 64, 0.4),
+              0 0 150px rgba(123, 9, 64, 0.4);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  padding: 20px;
+  max-width: 1200px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aboutleftdiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  opacity: 0; /* Initially hide image */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.aboutleftdiv img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.aboutrightdiv {
+  flex: 2;
+  margin: 20px;
+  color: #fff;
+  opacity: 0; /* Initially hide text */
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.aboutrightdiv p {
+  margin-bottom: 15px;
+  font-size: 0.925rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollFadeInUp {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollFadeInUpDelayed {
+  from {
+    transform: translateY(20px) scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.scroll-animation {
+  animation: scrollFadeInUp 1s ease-in-out forwards;
+}
+
+.scroll-animation-delayed {
+  animation: scrollFadeInUpDelayed 1s ease-in-out forwards;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutrightdiv {
+    margin: 10px 0;
+  }
+
+  .aboutleftdiv {
+    margin: 10px 0;
+  }
+}
+

@@ -1,0 +1,84 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 70vh;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px;
+    /* background: brown; */
+  }
+  .contacthead{
+    /* margin-bottom: 25px; */
+    color: #a1054e;
+    text-decoration: underline;
+    text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+                0 0 20px rgba(123, 9, 64, 0.4),
+                0 0 30px rgba(123, 9, 64, 0.4),
+                0 0 40px rgba(123, 9, 64, 0.4),
+                0 0 70px rgba(123, 9, 64, 0.4),
+                0 0 80px rgba(123, 9, 64, 0.4),
+                0 0 100px rgba(123, 9, 64, 0.4),
+                0 0 150px rgba(123, 9, 64, 0.4);
+  }
+
+  .contpara{
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  
+  .contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .contact-details a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+ 
+  
+  .contact-details p {
+    display: flex;
+    /* align-items: center; */
+    /* font-size: 1.2rem; */
+    margin: 20px 0;
+    color: white;
+  }
+
+  .contact-icon {
+    margin-right: 10px;
+    color: #a1054e;
+    font-size: 1.4rem;
+  }
+  /* Media Queries */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+  }
+
+  .contacthead {
+    font-size: 1.5rem; /* Adjust heading font size */
+  }
+
+  .contpara {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .contact-details {
+    margin-bottom: 30px;
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+}

@@ -1,0 +1,104 @@
+.project-container {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+    /* overflow-y: auto; */
+    /* background-color: #7700ff; */
+  }
+  
+  .projectheading {
+    text-align: center;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    color: #a1054e;
+    text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+    0 0 20px rgba(123, 9, 64, 0.4),
+    0 0 30px rgba(123, 9, 64, 0.4),
+    0 0 40px rgba(123, 9, 64, 0.4),
+    0 0 70px rgba(123, 9, 64, 0.4),
+    0 0 80px rgba(123, 9, 64, 0.4),
+    0 0 100px rgba(123, 9, 64, 0.4),
+    0 0 150px rgba(123, 9, 64, 0.4);
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  
+  .project {
+    width: calc(33.33% - 50px);
+    margin: 25px;
+    padding: 0px;
+    background-color: #3e3333e3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    top: 10px; 
+  }
+
+  .project:hover {
+    background-color: #2c2424e3; /* Change to desired hover color */
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .project-details {
+    padding: 1rem;
+  }
+  
+  .project h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #a1054e;
+    text-shadow: 0 0 10px rgba(123, 9, 64, 0.4),
+    0 0 20px rgba(123, 9, 64, 0.4),
+    0 0 30px rgba(123, 9, 64, 0.4),
+    0 0 40px rgba(123, 9, 64, 0.4),
+    0 0 70px rgba(123, 9, 64, 0.4),
+    0 0 80px rgba(123, 9, 64, 0.4),
+    0 0 100px rgba(123, 9, 64, 0.4),
+    0 0 150px rgba(123, 9, 64, 0.4);
+  }
+  
+  .project p {
+    font-size: 1rem;
+    line-height: 1.5;
+    height: auto; /* Limit to three lines of text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #ffffff;
+    padding-bottom: 10px;
+    /* text-align:justify; */
+  }
+  .project a {
+    color: #7700ff; /* Link color */
+    text-decoration: none;
+    text-align: center;
+    display: block; /* Make link a block element for center alignment */
+    margin-top: auto; /* Push link to the bottom of the card */
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 992px) {
+    .project {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }

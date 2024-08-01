@@ -1,0 +1,185 @@
+
+
+/* Overall styling for the HomeComponent */
+.homemaindiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  /* padding-top: 10px; */
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: aqua; */
+}
+
+/* Styling for the section containing text */
+.homesecdiv {
+  flex: 1;
+  padding-left: 10%;
+}
+
+
+/* Styling for the heading */
+.homesecdiv h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Highlighted text styling */
+.homesecdiv .highlight {
+  color: #a1054e;
+  margin-right: 3px;
+  font-weight: bold;
+}
+
+
+/* Styling for the subheading */
+.homesecdiv span {
+  font-size: 1.5rem;
+  color: #ffffff;
+  display: block;
+}
+
+/* Styling for the image */
+.homemaindiv img {
+  margin-top: 4px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.leftinner {
+  display: flex;
+}
+
+.lefth {
+  font-weight: bold;
+  font-size: 4rem; /* Increased font size */
+  margin-right: 5px; /*Space between "Hi, I'm" and "Anjali Meena" */
+}
+
+/* Right section styling */
+.rightdiv {
+  padding-right: 50px;
+}
+
+
+
+/* Styling for the button container */
+.button-container {
+  margin-top: 20px;
+  padding-right: 22px;
+}
+
+.button-container .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #a1054e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  text-decoration: none; /* Remove underline for <a> */
+}
+
+.icon-download {
+  padding-left: 5px; /* Adjust as needed */
+}
+
+.button-container .btn:hover {
+  background-color: #6b0533;
+  /* background-color: #ffffff;
+  color: #a1054e; */
+}
+
+
+/* Styling for the social icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: flex;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #a1054e;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  /* background-color: #a1054e; */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* .githubicon,
+.linkdinicon {
+  border: 4px solid #a1054e;
+} */
+
+.aval {
+  font-size: 1.1rem;
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.brif {
+  font-weight: bold;
+  padding-right: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Responsive adjustments for medium screens */
+  .homemaindiv {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center align content */
+  }
+
+  .homemaindiv img {
+    max-width: 200px; /* Decrease image size on smaller screens */
+    margin-top: 10px;
+  }
+
+  .homesecdiv {
+    text-align: left; /* Center align text on smaller screens */
+  }
+
+  .rightdiv {
+    max-width: 100%; /* Full width for image on smaller screens */
+    text-align: center; /* Center align image on smaller screens */
+    margin-bottom: 150px;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Responsive adjustments for small screens */
+  .lefth {
+    font-size: 1.5rem; /* Further decrease font size for smaller screens */
+  }
+
+  .button-container .btn {
+    font-size: 0.9rem; /* Decrease font size for buttons on smaller screens */
+  }
+
+  .btn{
+    margin-bottom: 10px;
+  }
+
+  .brif {
+    font-size: 0.8rem; /* Further decrease font size for smaller screens */
+  }
+
+  .aval {
+    font-size: 0.8rem; /* Decrease font size for smaller screens */
+  }
+}
