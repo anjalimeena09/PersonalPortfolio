@@ -30,21 +30,3 @@ export default ContactComponent;
 
 
 
-
-// import React from 'react';
-// import './contact.css';
-
-// const ContactComponent = () => {
-//   return (
-//     <div>
-//       <h1>Contact Me</h1>
-//       <div>
-//       <p>Email: anjalimeena09052003@gmail.com</p>
-//       <p>Location: Jaipur, Rajasthan</p>
-//       <p>Contact: 8306216084</p>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ContactComponent;
