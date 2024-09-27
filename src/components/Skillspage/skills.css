@@ -82,31 +82,54 @@
     box-shadow: 2px;
 }
 
+.skill-bar .bar .c{
+    width: 95%;
+}
 .skill-bar .bar .html{
     width: 95%;
-    animation: html 1s;
+    /* animation: html 1s; */
 }
     
 .skill-bar .bar .css{
     width: 85%;
-    animation: css 2s;
+    /* animation: css 2s; */
 }
     
 .skill-bar .bar .javascript {
     width: 80%;
-    animation: javascript 3s;
+    /* animation: javascript 3s; */
 }
 
 .skill-bar .bar .react {
     width: 75%;
-    animation: javascript 4s;
+    /* animation: javascript 4s; */
 }
 
 .skill-bar .bar .dsa {
     width: 85%;
-    animation: javascript 2s;
+    /* animation: javascript 2s; */
 }
 
+.skill-bar .bar .opps {
+    width: 90%;
+    /* animation: javascript 2s; */
+}
+.skill-bar .bar .dbms {
+    width: 85%;
+    /* animation: javascript 2s; */
+}
+.skill-bar .bar .sql {
+    width: 80%;
+    /* animation: javascript 2s; */
+}
+/* .skill-bar .bar .computernetwork {
+    width: 85%;
+    animation: javascript 2s;
+}
+.skill-bar .bar .operatingsystem{
+    width: 80%;
+    animation: javascript 2s;
+} */
 .skill-icon{
     margin-right: 8px;
 }
