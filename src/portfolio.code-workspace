@@ -2,10 +2,9 @@
 	"folders": [
 		{
 			"path": "../.."
-		},
-		{
-			"path": "../../../Study/HTML CSS/dolist"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tic_Tac_Toe-Game-main"
+	}
 }
